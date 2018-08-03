@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp"
+        android:text="@string/reminder_notification_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="#de000000" />
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="16dp"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/progressTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="28dp"
+        android:textColor="#99000000"
+        android:textSize="16sp"
+        tools:text="abcd" />
+
+    <TextView
+        android:id="@+id/reminderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="abcd"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#99000000"
+        android:textSize="16sp" />
+</LinearLayout>

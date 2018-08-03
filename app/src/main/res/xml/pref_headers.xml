@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header
+        android:fragment="com.cs50.jerichoarcelao.breaktime.ConfigureActivity$GeneralPreferenceFragment"
+        android:icon="@drawable/notification_icon"
+        android:title="@string/pref_header_short_break" />
+
+    <header
+        android:fragment="com.cs50.jerichoarcelao.breaktime.ConfigureActivity$DialogPreferenceFragment"
+        android:icon="@drawable/dialog_icon"
+        android:title="@string/pref_header_long_break" />
+
+</preference-headers>

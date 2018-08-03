@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="dialog_reminder_enabled"
+        android:summary="@string/dialog_enabled_summary"
+        android:title="@string/dialog_enabled" />
+    <EditTextPreference
+        android:defaultValue="20"
+        android:dependency="dialog_reminder_enabled"
+        android:inputType="number"
+        android:key="time_until_dialog"
+        android:numeric="integer"
+        android:selectAllOnFocus="true"
+        android:title="@string/notification_setting_title" />
+    <EditTextPreference
+        android:defaultValue="5"
+        android:dependency="dialog_reminder_enabled"
+        android:inputType="number"
+        android:key="dialog_break_length"
+        android:numeric="integer"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/dialog_length" />
+    <EditTextPreference
+        android:dependency="dialog_reminder_enabled"
+        android:key="custom_dialog_text"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/custom_text_setting_title" />
+
+</PreferenceScreen>

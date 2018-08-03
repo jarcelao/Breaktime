@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Breaktime!</string>
+    <string name="action_settings">Settings</string>
+    <string name="about_button">About</string>
+    <string name="skip_button">SKIP</string>
+    <string name="ok_button">OK</string>
+    <string name="main_activity_prefs">
+        com.cs50.jerichoarcelao.breaktime.main_activity_prefs
+    </string>
+
+    <!-- Strings related to about page -->
+    <string name="about_message_1">
+        Today, more than 2 billion active smart devices are running Android, making it the most
+        popular OS as of date. That means, a lot of us are looking at these devices\' screens
+        everyday. However, with the endless possibilities of things we can do on our devices, we
+        seem to spend a lot more time than we should, and we don\'t seem to notice that our health is
+        already being negatively affected.
+    </string>
+
+    <string name="about_message_2">
+        That\'s why I developed "Breaktime!". This application simply serves as a reminder for us
+        to take a break when using our devices. Not only does it help to reduce eye strain, it also
+        helps us to maintain a healthy habit by constantly reminding us to move our bodies after
+        a certain period of time. Now, you need not worry about our health being affected by our
+        devices anymore!
+    </string>
+
+    <string name="about_message_3">
+        This application is made as a final project for the online course "CS50x", and I would
+        personally like to give credits to the team for creating such an excellent learning
+        experience! You can learn more about it at
+        https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x
+    </string>
+
+    <string name="about_message_4">
+        This project is open-source and under the MIT License!
+        You can take a look at the code here:
+    </string>
+
+    <!-- Strings related to invalid alert -->
+    <string name="invalid_alert_title">Error!</string>
+    <string name="invalid_notification_content">
+        Notification interval value invalid, please change your settings.</string>
+    <string name="invalid_dialog_content">
+        Dialog interval value invalid, please change your settings.</string>
+
+    <!-- Strings related to persistent notification -->
+    <string name="persistent_notification_channel_id">btime_persistent_notif</string>
+    <string name="persistent_notification_title">Breaktime is running in the background!</string>
+    <string name="persistent_notification_text">Tap to configure…</string>
+
+    <!-- Strings related to toast notifications -->
+    <string name="breaktime_active_toast">Breaktime is active!</string>
+    <string name="breaktime_inactive_toast">Breaktime is deactivated!</string>
+
+    <!-- Strings related to notification reminders -->
+    <string name="reminder_notification_channel_id">btime_reminder_notif</string>
+    <string name="reminder_notification_title">It\'s Breaktime!</string>
+    <string name="reminder_notification_channel_name">Reminder Notifications</string>
+    <string name="reminder_notification_channel_description">Sends break time reminders</string>
+
+    <!-- Credits to the Safe Eyes project for the messages!
+    https://github.com/slgobinath/SafeEyes -->
+
+    <!-- Short break messages -->
+    <string name="short_message_1">Tightly close your eyes!</string>
+    <string name="short_message_2">Roll your eyes a few times to each side!</string>
+    <string name="short_message_3">Rotate your eyes in clockwise direction!</string>
+    <string name="short_message_4">Rotate your eyes in counterclockwise direction!</string>
+    <string name="short_message_5">Blink your eyes!</string>
+    <string name="short_message_6">Focus on a point in the far distance!</string>
+    <string name="short_message_7">Have some water!</string>
+
+    <!-- Long break messages -->
+    <string name="long_message_1">Walk for a while!</string>
+    <string name="long_message_2">Lean back at your seat and relax!</string>
+
+    <!-- Strings related to Settings -->
+    <string name="title_activity_configure">Settings</string>
+
+    <string name="pref_header_short_break">Notification Reminder</string>
+    <string name="notification_setting_title">Time until reminder (in minutes)</string>
+    <string name="custom_text_setting_title">Custom reminder text</string>
+
+    <string name="pref_header_long_break">Dialog Reminder</string>
+    <string name="dialog_enabled">Enabled</string>
+    <string name="dialog_length">Break length (in minutes)</string>
+    <string name="dialog_enabled_summary">
+        This type of reminder is INTRUSIVE! Take caution when using this.</string>
+</resources>
