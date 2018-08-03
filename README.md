@@ -21,4 +21,4 @@ experience! You can learn more about it here:
  <https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x>
  
  # License
- This project is under the MIT License!
+ This project is under the [MIT License](https://github.com/nik1082/Breaktime/blob/master/LICENSE)!
