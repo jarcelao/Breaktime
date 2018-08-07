@@ -1,10 +1,13 @@
 package com.cs50.jerichoarcelao.breaktime
 
 import android.app.AlertDialog
+import android.app.NotificationChannel
+import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.preference.PreferenceManager
 import android.support.design.widget.Snackbar
@@ -53,6 +56,12 @@ class MainActivity : AppCompatActivity() {
 
                 // Remove access to the settings menu
                 mainMenu?.findItem(R.id.action_settings)?.isEnabled = false
+
+                // Create a notification channel
+                createNotificationChannel(getString(R.string.persistent_notification_channel_id),
+                        getString(R.string.persistent_notification_channel_name),
+                        getString(R.string.persistent_notification_channel_desc),
+                        NotificationManager.IMPORTANCE_MIN)
 
                 // Create a pending intent (notification tap action)
                 val persistentIntent = Intent(this, MainActivity::class.java)
@@ -190,5 +199,18 @@ class MainActivity : AppCompatActivity() {
 
         reminderEnabled = prefs.getBoolean("reminder_notification_enabled", true)
         dialogEnabled = prefs.getBoolean("dialog_reminder_enabled", false)
+    }
+
+    /** Creates a notification channel (for Android 8 and above) */
+    private fun createNotificationChannel(channelID: String, name: CharSequence,
+                                          description: String, importance: Int) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val channel = NotificationChannel(channelID, name, importance)
+            channel.description = description
+
+            val notificationManager: NotificationManager =
+                    getSystemService(NotificationManager :: class.java)
+            notificationManager.createNotificationChannel(channel)
+        }
     }
 }

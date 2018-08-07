@@ -48,6 +48,11 @@
     <string name="persistent_notification_channel_id">btime_persistent_notif</string>
     <string name="persistent_notification_title">Breaktime is running in the background!</string>
     <string name="persistent_notification_text">Tap to configure…</string>
+    <string name="persistent_notification_channel_name">Persistent Notification</string>
+    <string name="persistent_notification_channel_desc">
+        DO NOT DISABLE! Makes sure that
+        the app runs in the background
+    </string>
 
     <!-- Strings related to toast notifications -->
     <string name="breaktime_active_toast">Breaktime is active!</string>
